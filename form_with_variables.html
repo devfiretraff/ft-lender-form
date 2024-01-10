@@ -1,0 +1,71 @@
+<div class="content__form" style="max-width: 600px !important;">
+    <form class="new-form" id="userDataForm" action="https://{trackingdomain}/click/" method="GET">
+        <script>const TRACKING_DATA_DOMAIN="{lander.param:trackdatadomain}"
+        </script>
+        <input type="text" hidden="true" value="{origin}" name="origin" id="origin"/>
+        <input type="text" hidden="true" value="{lander.param:fbpixel}" name="fbpixel" id="fbpixel"/>
+        <div class="form-block" data-step="0" style="display: block">
+            <div class="input-wrapper StepForm">
+                <p class="form-title">Enter your information</p>
+                <div class="form-body">
+                    <div id="firstnameWrapper" class="form-block__full">
+                        <i class="far fa-check-circle"></i><input type="text" data-validate="name" class="w100" placeholder="First name" id="firstname" name="firstname" autocomplete="given-name"><span class="form-field-placeholder firstname">Name</span>
+                    </div>
+                    <div id="firstnameInvalid" class="invalidField">
+                        * The name is invalid (ex. Smith)
+                    </div>
+                    <div id="lastnameWrapper" class="form-block__full">
+                        <i class="far fa-check-circle"></i><input type="text" data-validate="name" class="w100" placeholder="Last name" id="lastname" name="lastname" autocomplete="family-name"><span class="form-field-placeholder lastname">Surname</span>
+                    </div>
+                    <div id="lastnameInvalid" class="invalidField">
+                        * The surname is invalid (ex. John)
+                    </div>
+                    <div id="addressWrapper" class="form-block__full">
+                        <i class="far fa-check-circle"></i><input type="text" data-validate="address" class="w100" placeholder="Address" id="address" name="address" autocomplete="street-address"><span class="form-field-placeholder address">Address</span>
+                    </div>
+                    <div id="zipcodeWrapper" class="form-block__full">
+                        <i class="far fa-check-circle"></i><input type="text" data-validate="zip" class="w100" placeholder="ZIP" id="zipcode" name="zipcode" autocomplete="postal-code"><span class="form-field-placeholder zipcode">ZIP</span>
+                    </div>
+                    <div id="cityWrapper" class="form-block__full">
+                        <i class="far fa-check-circle"></i><input type="text" data-validate="city" class="w100" placeholder="City" id="city" name="city" autocomplete="address-level2"><span class="form-field-placeholder city">City</span>
+                    </div>
+                    <div id="phoneWrapper" class="form-block__full focused">
+                        <i class="far fa-check-circle"></i><input type="text" data-validate="phone" class="w100" placeholder="Phone" id="phone" name="phone" autocomplete="tel-national"><span class="form-field-placeholder phone">Telephone</span>
+                        <div class="plus_number_code">+</div>
+                        <!-- <div class="flag" style="background-image: url('assets/it.svg');"></div> -->
+                    </div>
+                    <div id="phoneInvalid" class="invalidField">
+                        * The telephone is invalid (ex. 3912345678)
+                    </div>
+                    <div id="emailWrapper" class="form-block__full">
+                        <i class="far fa-check-circle"></i><input type="text" data-validate="email" class="w100" placeholder="Email" id="email" name="email" autocomplete="off"><span class="form-field-placeholder email">Email</span>
+                        <ul class="email-hint">
+                            <li class="email" data-value="gmail.com">@gmail.com</li>
+                            <li class="email" data-value="outlook.com">@outlook.com</li>
+                            <li class="email" data-value="live.com">@live.com</li>
+                            <li class="email" data-value="orange.it">@orange.it</li>
+                            <li class="email" data-value="gmail.it">@gmail.it</li>
+                            <li class="email" data-value="hotmail.it">@hotmail.it</li>
+                            <li class="email" data-value="live.it">@live.it</li>
+                            <li class="email" data-value="sfr.it">@sfr.it</li>
+                            <li class="email" data-value="yahoo.it">@yahoo.it</li>
+                            <li class="email" data-value="gmx.it">@gmx.it</li>
+                            <li class="email" data-value="wanadoo.it">@wanadoo.it</li>
+                            <li class="email" data-value="neuf.it">@neuf.it</li>
+                            <li class="email" data-value="free.it">@free.it</li>
+                        </ul>
+                    </div>
+                    <div id="emailInvalid" class="invalidField" style="margin-bottom:15px;">
+                        * The email is invalid (ex. john.smith@mail.com)
+                    </div>
+                    <button id="submitForm" class="info-button" data-call="_generateFullName" data-next="1">
+                        Continue
+                    </button>
+                    <div id="loadingImage" class="loading-image" style="display: none;">
+                        <img src="assets/loading.gif" style="width:15%;"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
